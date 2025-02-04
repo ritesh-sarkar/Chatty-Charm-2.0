@@ -1,13 +1,22 @@
 
 @media (min-width: 768px) {
   body {
-    max-width: 60%; /* Main content area width */
+    width: 100%; /* Main content area width */
     margin: 0 auto; /* Center the content */
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    max-height: 100vh;
     overflow-y: hidden;
+  }
+  
+  .main_body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
   }
   
   .chat_outgoing_details{
