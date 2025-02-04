@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Chatty-Charm 2.0 | STUDIO-RT </title>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="name">Chatty-Charm 2.0</h1>
+  <span class="beta">Beta</span>
+  <hr class="header_end">
+
+  <header class="header">
+    <!-- Nav bar -->
+    <!-- <input type="checkbox" id="checkbox">
+    <label for="checkbox" class="bars">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </label>
+    <nav class="menu">
+      <label for="checkbox" class="cross">
+        <div class="bar4"></div>
+        <span class="bar5"></span>
+      </label>
+    
+      <ul class="list">
+        <li class="feature_menu"><a href="#features" class="">Features</a></li>
+        <li class="custom_avartar"><a href="#customizable_avartar" class="custom">Custom Avatar</a></li>
+        <li class="about_menu"><a href="#about" class="">About Developer</a></li>
+        <li class="contact_menu"><a href="#contact" class="">Contact Me</a></li>
+        <li class="review"><a href="review.html">Review</a></li>
+      </ul>
+    </nav>
+    <div class="overlay"></div> -->
+  </header>
+  <div class="main">
+
+    <div class="note">
+      <button> <img src="cross-svgrepo-com.svg" /> </button>
+      <h1> Note: </h1>
+      <p>This website is still under development. This is a <span>beta version.</span> The full version will be available soon. Until then, enjoy this Beta Version. Please remember that as it is a beta version, Chatty-Charm 2.0 might make mistakes, and some information might be incorrect. If you find any <span>bugs, errors, or issues</span>, or if you have any suggestions for improving Chatty-Charm 2.0, please feel free to share them through the <span>contact section. Thank you very much for using Chatty-Charm 2.0! ♡</span> </p>
+    </div>
+
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <img src="home_robot.png" alt="Cute Robot" class="hero-robot">
+        <h2>Welcome to Chatty-Charm 2.0! (Beta Version)
+        </h2>
+        <p>Your futuristic chatbot companion, always ready to assist and charm you with it's wit!</p>
+        <a href="main.html" class="start"> Get Started </a>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2>Features</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <img src="chating.jpg" alt="Feature 1">
+          <h3>Advanced AI Conversations</h3>
+          <p>Engage in seamless, human-like conversations powered by the latest in AI technology.</p>
+        </div>
+
+        <div class="feature-card">
+          <img src="real-time_learning.jpg" alt="Feature 2">
+          <h3>Real-Time Learning</h3>
+          <p>Chatty-Charm 2.0 learns from every interaction, getting smarter and more helpful over time.</p>
+        </div>
+        <div id="customizable_avartar" class="feature-card">
+          <img src="new-avater.jpg" alt="Feature 3">
+          <h3>Customizable Avatars</h3>
+          <p>Create and personalize your chatbot's avatar to match your style and preferences.</p>
+          <a href="custom.html" class="create_avatar">Create Avatar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About The Developer</h2>
+      <img src="about_developer.jpg" alt="Ritesh Sarkar">
+      <p>Hi, I'm Ritesh Sarkar, a passionate programmer with over 2 years of experience. Currently in the 12th grade, I've been building innovative projects that blend creativity with cutting-edge technology. Chatty-Charm 2.0 is a labor of love, designed to bring the future of conversational AI to your fingertips.</p>
+
+      <a href="about.html" class="developer_details"> Learn More </a>
+    </section>
+<!-- contact section will be available on next update -->
+
+  <!--   <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <img src="contact.jpg" alt="contact me">
+    <p>If you'd like to get in touch, whether for collaborations, questions, or feedback, feel free to reach out!</p>
+    <a href="contact.html" class="contact_me"> Contact </a>
+  </section>     -->
+  
+    <section id="review" class="review_section">
+      <h2>Review</h2>
+      <img src="review_section.jpg" alt="contact me">
+      <p>If you have enjoyed Chatty-Charm 2.0 or have any suggestions for improvement, please give a review. Your review is my inspiration😊</p>
+      <a href="review.html" class="review_me"> Review </a>
+    </section>
+  </div>
+  <footer class="footer">
+    <p>© 2024 Chatty-Charm 2.0 by STUDIO-RT || Ritesh Sarkar. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    window.onload = () => {
+      const body = document.querySelector('body');
+      const section = document.querySelectorAll('section');
+      const crossBtn = document.querySelector('.note button');
+      const noteDiv = document.querySelector('.note');
+      const footer = document.querySelector('footer');
+
+      body.style.overflow = "hidden";
+      body.classList.add('overlay');
+      footer.style.display = 'none'
+      section.forEach(item => {
+        item.style.display = 'none';
+      })
+
+      crossBtn.addEventListener('click', () => {
+        body.style.overflow = 'scroll';
+        noteDiv.style.display = 'none';
+        body.classList.remove('overlay');
+        footer.style.display = 'block'
+        section.forEach(item => {
+          item.style.display = 'block';
+        })
+      });
+    };
+  </script>
+
+</body>
+
+</html>

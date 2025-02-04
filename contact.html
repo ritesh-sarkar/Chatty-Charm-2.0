@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <title>Contact</title>
+</head>
+
+<body>
+
+  <div class="contact_body">
+    <div class="contact_main">
+      <h2>Contact Developer</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" class="review-form">
+
+        <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
+        <input type="hidden" name="access_key" value="504a7a12-489f-4138-ae48-fae06bef3e28">
+
+        <!-- Optional: Subject an be prefilled using type="hidden"
+         or type="text" for normal user submitted input -->
+        <input type="hidden" name="subject" value="New contact from Chatty-Charm 2">
+
+        <!-- Optional: From Name you want to see in the email
+         Default is "Notifications". you can overwrite here -->
+        <input type="hidden" name="from_name" value="@contact Chatty-Charm 2">
+
+
+        <!-- Optional: Default replyto will be "email" field (if available)
+         you may overwrite replyto with different email here -->
+        <input type="hidden" name="replyto" value="customer@example.com">
+
+
+        <!-- Optional: But Recommended: To Prevent SPAM Submission.
+         Make sure its hidden by default -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <!-- Custom Form Data: Form data you wish to receive in email. -->
+        <input type="email" name="email" required placeholder="Your E-mail" class="email">
+
+        <input type="text" name="First Name" required placeholder="Your Name" class="Username">
+
+        <textarea name="message" placeholder="Write here..." required class="area"></textarea>
+        <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
+        <div class="h-captcha" data-captcha="false" class="captcha" width="3rem"></div>
+
+        <h3>You will get a reply very soon...</h3>
+
+        <button type="submit" class="reviewBtn">Send<img src="send-email-svgrepo-com.svg" alt="" class="sendImg"></button>
+      </form>
+
+    </div>
+  </div>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+
+</html>
+
+Implement in this codes
