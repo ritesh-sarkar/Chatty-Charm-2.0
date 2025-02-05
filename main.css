@@ -250,8 +250,8 @@ h1 {
 .chat_wrapper {
   background: url(chatbg.jpg);
   overflow-y: auto;
-  height: 100vh;
-  max-height: 100vh;
+  height: 90vh;
+  max-height: 90vh;
   display: none;
   flex-direction: column;
   scroll-margin: 0;
