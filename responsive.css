@@ -18,6 +18,10 @@
     max-width: 500px;
     height: 100vh;
   }
+  .chat_wrapper{
+    width: 92vh;
+    max-width: 92vh;
+  }
   
   .chat_outgoing_details{
     transform: translateX(190px)
