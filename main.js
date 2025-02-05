@@ -31,7 +31,7 @@ function main() {
 
   const deleteButton = document.querySelector('.delete');
 
-  const API_KEY = "AIzaSyATWrGnY51Tbxu7gN7ajlzweVR7MB-jlqk"
+  const API_KEY = "AIzaSyDGD4ftYRzm-IrC_uu0ODRBkc5q665LAYQ"
 
   const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`
 
